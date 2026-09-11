@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AI Text Enhancer</string>
+    <string name="settings_title">Settings</string>
+    <string name="accessibility_service_description">Shows a small AI button whenever you focus a text field in any app (WhatsApp, Gmail, Chrome, etc.) so you can enhance the text or chat with AI. This service only reads the content of the currently focused text field — nothing is sent anywhere except directly to Google Gemini using your own API key.</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="420dp"
+    android:background="@drawable/bg_panel"
+    android:elevation="12dp"
+    android:orientation="vertical">
+
+    <!-- Drag handle / header -->
+    <LinearLayout
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI Chat"
+            android:textColor="@color/text_light"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnCloseChat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_icon_button"
+            android:padding="7dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/etChatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:hint="Message..."
+            android:maxLines="4"
+            android:padding="10dp"
+            android:textColor="@color/text_light"
+            android:textColorHint="@color/text_muted"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/btnSendChat"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_bubble"
+            android:padding="10dp"
+            android:src="@drawable/ic_send"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+</LinearLayout>

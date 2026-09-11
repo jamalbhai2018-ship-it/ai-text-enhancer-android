@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_panel"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI Text Enhancer"
+            android:textColor="@color/text_light"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnCloseToolbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_icon_button"
+            android:padding="7dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="#22FFFFFF" />
+
+    <TextView
+        android:id="@+id/menuImprove"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_edit"
+        android:text="Improve Writing" />
+
+    <TextView
+        android:id="@+id/menuGrammar"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_spellcheck"
+        android:text="Fix Grammar" />
+
+    <TextView
+        android:id="@+id/menuProfessional"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_business"
+        android:text="Make Professional" />
+
+    <TextView
+        android:id="@+id/menuFriendly"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_mood"
+        android:text="Make Friendly" />
+
+    <TextView
+        android:id="@+id/menuShorten"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_shorten"
+        android:text="Shorten" />
+
+    <TextView
+        android:id="@+id/menuExpand"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_expand"
+        android:text="Expand" />
+
+    <TextView
+        android:id="@+id/menuCustom"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_settings"
+        android:text="Custom Prompt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="4dp"
+        android:background="#22FFFFFF" />
+
+    <TextView
+        android:id="@+id/menuChat"
+        style="@style/MenuItemStyle"
+        android:drawableStart="@drawable/ic_chat"
+        android:text="Chat with AI" />
+
+</LinearLayout>
